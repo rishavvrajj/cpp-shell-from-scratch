@@ -14,7 +14,7 @@ int main() {
     string command;
     cin >> command;
     if (command == 'exit') {
-      return;
+      break;
     };
     cout << command << ": command not found" << endl;
   }
