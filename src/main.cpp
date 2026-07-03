@@ -10,6 +10,7 @@ int main() {
 
   // TODO: Uncomment the code below to pass the first stage
   while (true) {
+    cout << "$ ";
     string command;
     cin >> command;
     cout << command << ": command not found" << endl;
