@@ -17,7 +17,7 @@ int main() {
 
     string command = input.substr(0, input.find(" "));
 
-    string parameters = input.substr(intput.find(' ') + 1);
+    string parameters = input.substr(input.find(' ') + 1);
 
     if (command == "exit") {
       break;
