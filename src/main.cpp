@@ -13,6 +13,9 @@ int main() {
     cout << "$ ";
     string command;
     cin >> command;
+    if (command == 'exit') {
+      return;
+    };
     cout << command << ": command not found" << endl;
   }
 }
