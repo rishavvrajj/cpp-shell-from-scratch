@@ -15,8 +15,8 @@ int main() {
     cin >> command;
     if (command == "exit") {
       break;
-    } else if (command.substr(0,4) == "echo") {
-      cout << command.substr(5) << endl;
+    } else if (command.substr(0,5) == "echo ") {
+      cout << command.substr(5,) << endl;
     };
     cout << command << ": command not found" << endl;
   }
