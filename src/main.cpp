@@ -17,7 +17,15 @@ int main() {
 
     string command = input.substr(0, input.find(" "));
 
+    size_t parameterIndex = input.find(' ') + 1;
+
+    if (parameterIndex != npos) {
+      parameters = input.substr(parameterIndex);
+    };
+
     string parameters = input.substr(input.find(' ') + 1);
+
+    if parameters
 
     if (command == "exit") {
       break;
