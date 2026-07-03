@@ -11,14 +11,28 @@ int main() {
   // TODO: Uncomment the code below to pass the first stage
   while (true) {
     cout << "$ ";
-    string command;
-    getline(cin, command);
+
+    string input;
+    getline(cin, input);
+
+    string command = input.substr(0, input.find(" "));
+
+    string parameters = input.substr(intput.find(' ') + 1);
+
     if (command == "exit") {
       break;
-    } else if (command.substr(0,5) == "echo ") {
-      cout << command.substr(5) << endl;
+    };
+
+    if (command == "echo") {
+      cout << parameters << endl;
+    } else if (command == "type") {
+      if (parameters == "echo" || parameters == "exit" || parameters == "type") {
+        cout << parameters << " is a shell builtin" << endl;
+      } else {
+        cout << parameters << ": not found" << endl;
+      }
     } else {
       cout << command << ": command not found" << endl;
-    };
+    }
   }
 }
