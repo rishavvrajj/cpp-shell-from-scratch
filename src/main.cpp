@@ -9,5 +9,6 @@ int main() {
   cerr << unitbuf;
 
   // TODO: Uncomment the code below to pass the first stage
-  cout << "$ ";
+  getline(cin, command);
+  cout << command << ": command not found" << endl;
 }
