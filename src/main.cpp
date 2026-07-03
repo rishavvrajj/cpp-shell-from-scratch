@@ -12,13 +12,13 @@ int main() {
   while (true) {
     cout << "$ ";
     string command;
-    cin >> command;
+    getline(cin, command)
     if (command == "exit") {
       break;
-    } else if (command.substr(0, 5) == "echo ") {
-      std::cout << command.substr(5) << std::endl;
+    } else if (command.substr(0,5) == "echo ") {
+      cout << command.substr(5) << endl;
     } else {
-      std::cout << command << ": command not found" << std::endl;
-    }
+      cout << command << ": command not found" << endl;
+    };
   }
 }
