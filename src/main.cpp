@@ -9,8 +9,9 @@ int main() {
   cerr << unitbuf;
 
   // TODO: Uncomment the code below to pass the first stage
-  std::cout << "$ ";
-  string command;
-  cin >> command;
-  cout << command << ": command not found" << endl;
+  while (true) {
+    string command;
+    cin >> command;
+    cout << command << ": command not found" << endl;
+  }
 }
