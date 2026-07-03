@@ -13,12 +13,12 @@ int main() {
     cout << "$ ";
     string command;
     cin >> command;
-    if (command == "exit") {
+    if (input == "exit") {
       break;
-    } else if (command.substr(0,4) == "echo ") {
-      cout << command.substr(5) << endl;
+    } else if (input.substr(0, 5) == "echo ") {
+      std::cout << input.substr(5) << std::endl;
     } else {
-      cout << command << ": command not found" << endl;
-    };
+      std::cout << input << ": command not found" << std::endl;
+    }
   }
 }
