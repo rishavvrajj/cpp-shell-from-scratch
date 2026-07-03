@@ -12,7 +12,7 @@ int main() {
   while (true) {
     cout << "$ ";
     string command;
-    getline(cin, command)
+    getline(cin, command);
     if (command == "exit") {
       break;
     } else if (command.substr(0,5) == "echo ") {
